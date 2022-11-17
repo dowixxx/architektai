@@ -1,0 +1,107 @@
+.hero.about-page {
+    position: static;
+    height: 100vh;
+    min-height: 657rem;
+    max-height: 940rem;
+    overflow: hidden;
+}
+
+
+
+/* ABOUT SECTION */
+.about {
+    padding: 24rem 0 185rem 0;
+}
+.about--description {
+    display: flex;
+    gap: 0 32rem;
+    margin-bottom: 206rem;
+}
+.about--description .about--description-text {
+    width: 50%;
+    max-width: 653rem;
+}
+.about--team-title, .about--publicity-title {
+    display: flex;
+    cursor: pointer;
+}
+.about--team label, .about--publicity label {
+    transition: all 200ms ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.about--team label:hover, .about--publicity label:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.about--team label:hover .menu-stripe--horizontal, .about--team label:hover .menu-stripe--vertical, .about--publicity label:hover .menu-stripe--horizontal, .about--publicity label:hover .menu-stripe--vertical {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.about--team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56rem 18rem;
+    margin-bottom: 185rem;
+}
+.about--team-person {
+    width: 206rem;
+}
+.about--team-person-image {
+    margin-bottom: 14rem;
+    width: 100%;
+}
+.about--team-person-name, .about--team-person-role, .about--team-person-phone {
+    margin-bottom: 2rem;
+}
+.about--publicity-title {
+    margin-bottom: 40rem;
+}
+.about--publicity-description {
+    display: flex;
+    gap: 0 32rem;
+}
+.about--publicity-awards, .about--publicity-featured {
+    width: 50%;
+    max-width: 654rem;
+}
+.about--publicity-awards h3, .about--publicity-featured h3 {
+    margin-bottom: 24rem;
+}
+
+
+
+#team--expand {
+    display:none;  
+}
+#team--expand + .about--team {
+    max-height: 86rem;
+    overflow: hidden;
+    transition:all 350ms ease;
+}
+#team--expand:checked + .about--team {
+    max-height: 1092rem;  
+}
+.about--content label {
+    cursor: pointer;
+    width: 100%;
+}
+
+
+#publicity--expand {
+    display:none;  
+}
+#publicity--expand + .about--publicity {
+    max-height: 86rem;
+    overflow: hidden;
+    transition:all 350ms ease;
+}
+#publicity--expand:checked + .about--publicity {
+    max-height: 314rem;  
+}
+.publicity--content label {
+    cursor: pointer;
+    width: 100%;
+}

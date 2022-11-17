@@ -1,0 +1,142 @@
+/* SOLO PROJECT SECTION */
+.solo-project {
+    padding: 8rem 0 185rem 0;
+}
+.solo-project--title {
+    display: flex;
+    cursor: pointer;
+}
+.solo-project--more-info {
+    margin-bottom: 100rem;
+}
+.solo-project--more-info-content {
+    display: flex;
+    padding-top: 12rem;
+}
+.solo-project--more-info-box {
+    width: 50%;
+    max-width: 684rem;
+}
+.solo-project--more-info-box p {
+    margin-bottom: 24rem;
+}
+
+
+/* SOLO PROJECT EXPAND CSS*/
+#solo-project--expand {
+    display:none;  
+}
+#solo-project--expand + .solo-project--more-info {
+    max-height: 86rem;
+    overflow: hidden;
+    transition: all 350ms ease;
+}
+#solo-project--expand:checked + .solo-project--more-info {
+    max-height: 226rem;  
+}
+.solo-project--content label {
+    cursor: pointer;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 200ms ease;
+}
+#solo-project--expand:checked + .solo-project--more-info {
+    margin-bottom: 200rem;
+}
+.solo-project--more-info label:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.solo-project--more-info label:hover .menu-stripe--horizontal, .solo-project--more-info label:hover .menu-stripe--vertical {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* FIRST ROW*/
+.solo-project--first-row {
+    width: 100%;
+    display: flex;
+    gap: 0rem 18rem;
+    margin-bottom: 180rem;
+}
+.solo-project--first-row-image-wrap {
+    width: 50%;
+}
+.solo-project--first-row-image-wrap img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+/* SECOND ROW*/
+.solo-project--second-row {
+    margin-bottom: 204rem;
+}
+.solo-project--second-row img {
+    width: 100%;
+}
+
+
+
+/* THIRD ROW*/
+.solo-project--third-row {
+    display: flex;
+    gap: 0 18rem;
+    margin-bottom: 204rem;
+}
+.solo-project--third-row img, .solo-project--third-row p {
+    width: 50%;
+}
+
+
+
+/* FOURTH ROW*/
+.solo-project--fourth-row {
+    position: relative;
+    margin-bottom: 208rem;
+}
+.solo-project--fourth-row p {
+    position: absolute;
+    bottom: -30rem;
+}
+/* SLICK SLIDER FULL WIDTH PROJECT PAGE*/
+#project .slider-paging-number {
+    bottom: -92rem;
+    left: auto;
+    right: 0;
+}
+
+
+
+/* FIFTH ROW*/
+.solo-project--fifth-row {
+    display: flex;
+    gap: 0 18rem;
+    justify-content: space-between;
+    margin-bottom: 200rem;
+}
+.slick-slider-wrapper {
+    width: 49.3%;
+}
+.slick-slider-wrapper p {
+    margin-top: 12rem;
+}
+/* SLICK SLIDER FULL WIDTH PROJECT PAGE*/
+#project .slick-list {
+    height: unset;
+    min-height: unset;
+    max-height: unset;
+}
+
+
+
+/* SIXTH ROW*/
+.solo-project--sixth-row img {
+    width: 100%;
+}

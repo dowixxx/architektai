@@ -1,0 +1,78 @@
+/*PROJECTS SECTION*/
+.projects {
+    margin-top: 18rem;
+    margin-bottom: 185rem;
+}
+#projects--expand {
+    display:none;  
+}
+#projects--expand + .projects--menu-item-wrapper {
+    max-height: 86rem;
+    overflow: hidden;
+    transition:all 350ms ease;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12rem 24rem;
+}
+#projects--expand:checked + .projects--menu-item-wrapper {
+    max-height: 420rem;  
+}
+.projects--content label {
+    cursor: pointer;
+    width: 100%;
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    z-index: 2;*/
+}
+.projects--menu-item {
+    display: flex;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 200ms ease;
+    opacity: 0;
+    transform: translate(0rem, 0rem);
+}
+.projects--menu-item.selected {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+}
+/* LOADED FILTER MENU LINKS APPEAR */
+.projects--menu-item---loaded {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+}
+.projects--menu-item-wrapper label:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.projects--menu-item-wrapper label:hover .menu-stripe--horizontal, .projects--menu-item-wrapper label:hover .menu-stripe--vertical {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.projects--collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 130rem;
+    row-gap: 185rem;
+    justify-content: space-between;
+}
+.project-box {
+    width: 456rem;
+    width: 32.6%;
+    height: fit-content;
+}
+a.project-box:hover {
+    opacity: 0.8;
+}
+.project-box-image {
+    margin-bottom: 10rem;
+    width: 100%;
+}
+.project-box-text {
+    display: flex;
+    justify-content: space-between;
+}
